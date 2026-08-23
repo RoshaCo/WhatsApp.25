@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>بررسی شرایط دریافت حمایت بهزیستی | مشاوره و پیگیری</title>
+
+<meta name="description" content="بررسی اولیه شرایط دریافت حمایت و مستمری بهزیستی، مشاوره و تسهیل‌گری تشکیل و پیگیری پرونده.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A2540">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="بررسی شرایط دریافت حمایت بهزیستی">
+<meta property="og:description" content="شرایط خود را رایگان بررسی کنید و درباره مسیر قانونی اقدام اطلاعات بگیرید.">
+<meta property="og:locale" content="fa_IR">
+
+<style>
+/* =========================================================
+   فونت
+========================================================= */
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
+/* =========================================================
+   تنظیمات پایه
+========================================================= */
+:root{
+    --blue:#0A2540;
+    --blue2:#123B61;
+    --gold:#FFD700;
+    --gold2:#F3B900;
+    --white:#FFFFFF;
+    --light:#F5F8FB;
+    --text:#172B3A;
+    --muted:#667784;
+    --green:#20B85A;
+    --red:#D94848;
+    --border:#E3EAF0;
+    --shadow:0 12px 35px rgba(10,37,64,.10);
+}
+
+*{
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#EAF0F5;
+    color:var(--text);
+    font-family:"Vazirmatn",Tahoma,sans-serif;
+    line-height:1.9;
+}
+
+button,
+input,
+select{
+    font-family:inherit;
+}
+
+a{
+    text-decoration:none;
+}
+
+.page{
+    width:100%;
+    max-width:480px;
+    margin:auto;
+    background:var(--white);
+    min-height:100vh;
+    overflow:hidden;
+}
+
+/* =========================================================
+   انیمیشن
+========================================================= */
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+    transition:opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+.hero{
+    position:relative;
+    padding:38px 20px 30px;
+    text-align:center;
+    color:#fff;
+    background:
+        radial-gradient(circle at 15% 15%,rgba(255,215,0,.18),transparent 30%),
+        radial-gradient(circle at 90% 80%,rgba(51,135,203,.25),transparent 35%),
+        linear-gradient(145deg,#071C30,#0A2540 55%,#123B61);
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    left:-80px;
+    bottom:-80px;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(255,215,0,.06);
+}
+
+.trust-badge{
+    position:relative;
+    z-index:2;
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    padding:6px 13px;
+    border:1px solid rgba(255,215,0,.35);
+    border-radius:50px;
+    color:var(--gold);
+    background:rgba(255,255,255,.06);
+    font-size:12px;
+    font-weight:800;
+}
+
+.hero h1{
+    position:relative;
+    z-index:2;
+    margin:18px 0 12px;
+    font-size:28px;
+    line-height:1.65;
+    font-weight:950;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero-subtitle{
+    position:relative;
+    z-index:2;
+    margin:0 auto 22px;
+    color:#DCE8F2;
+    font-size:14px;
+}
+
+.cta-main{
+    position:relative;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:56px;
+    width:100%;
+    border-radius:16px;
+    color:#1A2935;
+    background:linear-gradient(135deg,#FFE873,#FFD700,#EAB400);
+    box-shadow:0 10px 28px rgba(255,215,0,.20);
+    font-size:16px;
+    font-weight:950;
+    border:0;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.cta-main:active{
+    transform:scale(.98);
+}
+
+.whatsapp-hero{
+    position:relative;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:51px;
+    margin-top:10px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:15px;
+    color:#fff;
+    background:rgba(255,255,255,.08);
+    font-size:14px;
+    font-weight:800;
+}
+
+.hero-note{
+    position:relative;
+    z-index:2;
+    margin:10px 0 0;
+    color:#B9CAD8;
+    font-size:10px;
+}
+
+/* =========================================================
+   نوار فوریت
+========================================================= */
+.urgency{
+    padding:13px 15px;
+    background:#FFF7D6;
+    border-bottom:1px solid #F1DF8C;
+    text-align:center;
+}
+
+.urgency-title{
+    color:#745B00;
+    font-size:12px;
+    font-weight:900;
+}
+
+.countdown{
+    direction:ltr;
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    margin-top:7px;
+}
+
+.count-box{
+    min-width:54px;
+    padding:4px 5px;
+    border-radius:9px;
+    background:#0A2540;
+    color:#fff;
+}
+
+.count-box strong{
+    display:block;
+    font-size:17px;
+    line-height:1.2;
+}
+
+.count-box small{
+    font-size:8px;
+    color:#D6E1EA;
+}
+
+/* =========================================================
+   بخش عمومی
+========================================================= */
+section{
+    padding:30px 18px;
+}
+
+.section-title{
+    margin:0 0 10px;
+    color:var(--blue);
+    font-size:22px;
+    line-height:1.6;
+    font-weight:950;
+}
+
+.section-subtitle{
+    margin:0 0 18px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+.highlight{
+    color:#8B6900;
+    font-weight:900;
+}
+
+.card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:18px;
+    box-shadow:var(--shadow);
+}
+
+/* =========================================================
+   آیا می دانستی
+========================================================= */
+.awareness{
+    background:var(--light);
+    text-align:center;
+}
+
+.awareness-card{
+    padding:20px;
+}
+
+.awareness-big{
+    margin:0 0 10px;
+    color:var(--blue);
+    font-size:20px;
+    font-weight:950;
+}
+
+.awareness p{
+    margin:0;
+    color:#526572;
+    font-size:13px;
+}
+
+.awareness-question{
+    margin-top:15px !important;
+    color:#A47900 !important;
+    font-size:17px !important;
+    font-weight:950;
+}
+
+/* =========================================================
+   ماشین حساب
+========================================================= */
+.calculator{
+    background:#fff;
+}
+
+.calc-card{
+    padding:20px;
+    background:
+        linear-gradient(145deg,#F7FAFC,#EEF4F8);
+}
+
+.input-group{
+    margin-bottom:14px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    color:var(--blue);
+    font-size:12px;
+    font-weight:900;
+}
+
+.input-group input{
+    width:100%;
+    height:50px;
+    padding:0 14px;
+    border:1px solid #D6E0E8;
+    border-radius:12px;
+    outline:none;
+    background:#fff;
+    color:var(--text);
+    font-size:15px;
+}
+
+.input-group input:focus{
+    border-color:var(--gold2);
+    box-shadow:0 0 0 3px rgba(255,215,0,.13);
+}
+
+.calc-result{
+    margin-top:17px;
+    padding:16px;
+    border-radius:15px;
+    background:var(--blue);
+    color:#fff;
+    text-align:center;
+}
+
+.calc-result span{
+    display:block;
+    color:#C7D6E3;
+    font-size:11px;
+}
+
+.calc-number{
+    display:block;
+    margin-top:4px;
+    color:var(--gold);
+    font-size:25px;
+    font-weight:950;
+}
+
+/* =========================================================
+   کارت های درد
+========================================================= */
+.pain-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.pain-card{
+    padding:15px 12px;
+    min-height:145px;
+    border:1px solid var(--border);
+    border-radius:16px;
+    background:#fff;
+}
+
+.icon{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:9px;
+    border-radius:11px;
+    background:#EEF4F8;
+    color:var(--blue);
+}
+
+.pain-card h3{
+    margin:0 0 5px;
+    color:var(--blue);
+    font-size:13px;
+    line-height:1.6;
+}
+
+.pain-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:11px;
+}
+
+.result-line{
+    margin:17px 0 0;
+    padding:14px;
+    border-radius:14px;
+    background:#FFF8D9;
+    color:#715A00;
+    text-align:center;
+    font-size:14px;
+    font-weight:950;
+}
+
+/* =========================================================
+   خدمات
+========================================================= */
+.services{
+    background:var(--light);
+}
+
+.service{
+    position:relative;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:11px;
+    padding:15px;
+    border-radius:15px;
+    background:#fff;
+    border:1px solid var(--border);
+}
+
+.service:last-child{
+    margin-bottom:0;
+}
+
+.service-number{
+    flex:none;
+    width:35px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--gold);
+    color:var(--blue);
+    font-weight:950;
+}
+
+.service h3{
+    margin:0 0 3px;
+    color:var(--blue);
+    font-size:13px;
+}
+
+.service p{
+    margin:0;
+    color:var(--muted);
+    font-size:11px;
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+.faq-list{
+    display:grid;
+    gap:9px;
+}
+
+.faq-item{
+    border:1px solid var(--border);
+    border-radius:14px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.faq-question{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:14px;
+    border:0;
+    background:#fff;
+    color:var(--blue);
+    text-align:right;
+    font-size:13px;
+    font-weight:900;
+    cursor:pointer;
+}
+
+.faq-icon{
+    flex:none;
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#EEF4F8;
+    transition:.25s;
+}
+
+.faq-answer{
+    display:none;
+    padding:0 14px 15px;
+    color:#596B78;
+    font-size:12px;
+    line-height:2;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
+
+.faq-item.active .faq-icon{
+    transform:rotate(45deg);
+    background:var(--gold);
+}
+
+/* =========================================================
+   داستان موفقیت
+========================================================= */
+.story{
+    background:var(--blue);
+    color:#fff;
+}
+
+.story .section-title{
+    color:#fff;
+}
+
+.story-card{
+    position:relative;
+    min-height:220px;
+    display:flex;
+    align-items:flex-end;
+    padding:20px;
+    overflow:hidden;
+    border-radius:20px;
+    background:
+        linear-gradient(0deg,rgba(4,20,34,.96),rgba(4,20,34,.18)),
+        radial-gradient(circle at 65% 25%,#69869A,#263D4D 48%,#102536);
+}
+
+.story-card::before{
+    content:"";
+    position:absolute;
+    top:35px;
+    right:50%;
+    transform:translateX(50%);
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    border:3px solid rgba(255,255,255,.2);
+}
+
+.story-text{
+    position:relative;
+    z-index:2;
+}
+
+.story-text strong{
+    color:var(--gold);
+    font-size:16px;
+}
+
+.story-text p{
+    margin:5px 0 0;
+    color:#E4EDF4;
+    font-size:12px;
+}
+
+/* =========================================================
+   نظرات
+========================================================= */
+.testimonials{
+    background:#fff;
+}
+
+.testimonial-grid{
+    display:grid;
+    gap:10px;
+}
+
+.testimonial{
+    padding:16px;
+    border:1px solid var(--border);
+    border-radius:16px;
+}
+
+.stars{
+    color:#F1B900;
+    letter-spacing:2px;
+}
+
+.testimonial p{
+    margin:7px 0;
+    color:#536571;
+    font-size:12px;
+}
+
+.person{
+    color:var(--blue);
+    font-size:11px;
+    font-weight:900;
+}
+
+/* =========================================================
+   هشدارها
+========================================================= */
+.warnings{
+    background:#FFF7F7;
+}
+
+.warning{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    margin-bottom:10px;
+    padding:14px;
+    border-radius:14px;
+    border:1px solid #F2D9D9;
+    background:#fff;
+}
+
+.warning:last-child{
+    margin-bottom:0;
+}
+
+.warning-icon{
+    flex:none;
+    font-size:22px;
+}
+
+.warning strong{
+    display:block;
+    margin-bottom:2px;
+    color:#9F2F2F;
+    font-size:13px;
+}
+
+.warning span{
+    color:#6F6666;
+    font-size:11px;
+}
+
+/* =========================================================
+   فرم
+========================================================= */
+.form-section{
+    background:
+        radial-gradient(circle at 90% 0,rgba(255,215,0,.12),transparent 30%),
+        var(--blue);
+}
+
+.form-section .section-title{
+    color:#fff;
+}
+
+.form-section .section-subtitle{
+    color:#C8D8E5;
+}
+
+.form-card{
+    padding:18px;
+    border-radius:19px;
+    background:#fff;
+}
+
+.form-field{
+    margin-bottom:12px;
+}
+
+.form-field label{
+    display:block;
+    margin-bottom:5px;
+    color:var(--blue);
+    font-size:11px;
+    font-weight:900;
+}
+
+.form-field input,
+.form-field select{
+    width:100%;
+    height:48px;
+    padding:0 12px;
+    border:1px solid #D8E1E8;
+    border-radius:11px;
+    outline:none;
+    background:#fff;
+    color:var(--text);
+    font-size:13px;
+}
+
+.form-field input:focus,
+.form-field select:focus{
+    border-color:var(--gold2);
+}
+
+.error{
+    display:none;
+    margin-top:4px;
+    color:#C43737;
+    font-size:10px;
+}
+
+.form-field.invalid input{
+    border-color:#D94848;
+}
+
+.form-field.invalid .error{
+    display:block;
+}
+
+.submit-btn{
+    width:100%;
+    height:54px;
+    border:0;
+    border-radius:14px;
+    background:linear-gradient(135deg,#FFE873,#FFD700,#EAB400);
+    color:#1B2934;
+    font-size:15px;
+    font-weight:950;
+    cursor:pointer;
+}
+
+.form-success{
+    display:none;
+    margin-top:12px;
+    padding:14px;
+    border-radius:13px;
+    background:#E8F8EE;
+    color:#19723C;
+    text-align:center;
+    font-size:12px;
+    font-weight:800;
+}
+
+.form-privacy{
+    margin:10px 0 0;
+    color:#82919D;
+    text-align:center;
+    font-size:9px;
+}
+
+/* =========================================================
+   CTA نهایی
+========================================================= */
+.final-cta{
+    padding:34px 18px 90px;
+    text-align:center;
+    background:#F5F8FB;
+}
+
+.final-cta p{
+    margin:0 0 15px;
+    color:#536571;
+    font-size:13px;
+}
+
+/* =========================================================
+   فوتر
+========================================================= */
+footer{
+    padding:25px 18px 100px;
+    text-align:center;
+    background:#071C30;
+    color:#91A6B7;
+    font-size:10px;
+}
+
+footer a{
+    color:var(--gold);
+}
+
+footer p{
+    margin:0 0 8px;
+}
+
+/* =========================================================
+   واتساپ شناور
+========================================================= */
+.floating-whatsapp{
+    position:fixed;
+    z-index:999;
+    left:16px;
+    bottom:16px;
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--green);
+    color:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    animation:pulse 2.2s infinite;
+}
+
+.floating-whatsapp svg{
+    width:30px;
+    height:30px;
+}
+
+@keyframes pulse{
+    0%,100%{
+        box-shadow:0 8px 25px rgba(0,0,0,.25);
+    }
+    50%{
+        box-shadow:0 8px 30px rgba(32,184,90,.45);
+    }
+}
+
+@media(min-width:481px){
+    body{
+        padding:20px 0;
+    }
+
+    .page{
+        border-radius:22px;
+    }
+
+    .floating-whatsapp{
+        left:calc(50% - 224px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="hero">
+
+    <div class="trust-badge">
+        <span>✓</span>
+        <span>مشاوره و بررسی اولیه</span>
+    </div>
+
+    <h1>
+        بررسی شرایط دریافت
+        <span>حمایت و مستمری بهزیستی</span>
+    </h1>
+
+    <p class="hero-subtitle">
+        اگر فکر می‌کنی ممکن است شرایط دریافت حمایت را داشته باشی،
+        قبل از هر اقدامی شرایطت را بررسی کن.
+    </p>
+
+    <a class="cta-main" href="#leadForm">
+        بررسی رایگان شرایط من
+    </a>
+
+    <a class="whatsapp-hero"
+       href="https://wa.me/989303833007?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%B4%D8%B1%D8%A7%DB%8C%D8%B7%D9%85%20%D8%B1%D8%A7%20%D8%AF%D8%B1%20%D8%B3%D8%A7%DB%8C%D8%AA%20%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%20%DA%A9%D8%B1%D8%AF%D9%85%20%D9%88%20%D8%A2%D9%85%D8%A7%D8%AF%D9%87%20%D8%A7%D9%82%D8%AF%D8%A7%D9%85%20%D9%87%D8%B3%D8%AA%D9%85.%20%D9%84%D8%B7%D9%81%D8%A7%D9%8B%20%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C%DB%8C%E2%80%8C%D8%A7%D9%85%20%DA%A9%D9%86%DB%8C%D8%AF.">
+        مشاوره فوری در واتساپ
+    </a>
+
+    <div class="hero-note">
+        نتیجه نهایی منوط به احراز شرایط قانونی و تصمیم مرجع ذی‌صلاح است.
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     فوریت
+===================================================== -->
+<div class="urgency">
+
+    <div class="urgency-title">
+        ⚠️ ظرفیت بررسی اولیه رایگان این ماه محدود است
+    </div>
+
+    <div class="countdown" dir="ltr">
+
+        <div class="count-box">
+            <strong id="hours">00</strong>
+            <small>ساعت</small>
+        </div>
+
+        <div class="count-box">
+            <strong id="minutes">00</strong>
+            <small>دقیقه</small>
+        </div>
+
+        <div class="count-box">
+            <strong id="seconds">00</strong>
+            <small>ثانیه</small>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     آگاهی
+===================================================== -->
+<section class="awareness reveal">
+
+    <div class="card awareness-card">
+
+        <h2 class="section-title">
+            آیا می‌دانستی؟
+        </h2>
+
+        <p class="awareness-big">
+            صرف داشتن استرس یا اضطراب به‌تنهایی
+            به معنی دریافت مستمری نیست.
+        </p>
+
+        <p>
+            حمایت‌های سازمان بهزیستی بر اساس ضوابط، نوع و شدت شرایط فرد،
+            مدارک پزشکی و ارزیابی مراجع مربوط تعیین می‌شود.
+            اگر نمی‌دانی شرایطت چیست، می‌توانی ابتدا آن را بررسی کنی.
+        </p>
+
+        <p class="awareness-question">
+            شاید وقت آن رسیده باشد شرایط واقعی خودت را بدانـی.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ماشین حساب
+===================================================== -->
+<section class="calculator reveal" id="calculator">
+
+    <h2 class="section-title">
+        اگر مستمری دریافت شود، مجموع آن چقدر می‌شود؟
+    </h2>
+
+    <p class="section-subtitle">
+        این ابزار فقط یک محاسبه فرضی است و به معنی تضمین دریافت مستمری نیست.
+    </p>
+
+    <div class="card calc-card">
+
+        <div class="input-group">
+            <label for="age">
+                سن فعلی
+            </label>
+
+            <input
+                id="age"
+                type="number"
+                min="18"
+                max="74"
+                value="38"
+                inputmode="numeric"
+                placeholder="مثلاً ۳۸"
+            >
+        </div>
+
+        <div class="input-group">
+            <label for="retirementAge">
+                سن پایان محاسبه
+            </label>
+
+            <input
+                id="retirementAge"
+                type="number"
+                min="19"
+                max="100"
+                value="75"
+                inputmode="numeric"
+            >
+        </div>
+
+        <div class="calc-result">
+
+            <span>
+                بر اساس عدد فرضی ۳۰ میلیون تومان در ماه:
+            </span>
+
+            <strong class="calc-number" id="calcResult">
+                ۱۳٫۳۲ میلیارد تومان
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     نقاط درد
+===================================================== -->
+<section class="reveal">
+
+    <h2 class="section-title">
+        چرا بررسی درست مهم است؟
+    </h2>
+
+    <p class="section-subtitle">
+        مسیر دریافت حمایت ممکن است نیازمند مدارک، ارزیابی و مراحل اداری مختلف باشد.
+    </p>
+
+    <div class="pain-grid">
+
+        <div class="pain-card">
+
+            <div class="icon">
+                ⚠️
+            </div>
+
+            <h3>
+                نقص مدارک
+            </h3>
+
+            <p>
+                پرونده ناقص می‌تواند باعث برگشت یا طولانی شدن روند شود.
+            </p>
+
+        </div>
+
+        <div class="pain-card">
+
+            <div class="icon">
+                🩺
+            </div>
+
+            <h3>
+                مدارک پزشکی
+            </h3>
+
+            <p>
+                مدارک باید از مسیر و مراجع معتبر تهیه و ارائه شوند.
+            </p>
+
+        </div>
+
+        <div class="pain-card">
+
+            <div class="icon">
+                ⏳
+            </div>
+
+            <h3>
+                مراحل اداری
+            </h3>
+
+            <p>
+                ناآشنایی با مراحل می‌تواند زمان و انرژی زیادی بگیرد.
+            </p>
+
+        </div>
+
+        <div class="pain-card">
+
+            <div class="icon">
+                ❓
+            </div>
+
+            <h3>
+                ناآگاهی
+            </h3>
+
+            <p>
+                خیلی‌ها ابتدا نمی‌دانند اصلاً باید از کجا شروع کنند.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="result-line">
+        ما مسیر بررسی و پیگیری را برایت ساده‌تر می‌کنیم.
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     خدمات
+===================================================== -->
+<section class="services reveal">
+
+    <h2 class="section-title">
+        ما دقیقاً چه کمکی می‌کنیم؟
+    </h2>
+
+    <p class="section-subtitle">
+        تصمیم نهایی همیشه با مراجع قانونی مربوط است؛
+        نقش ما مشاوره و تسهیل‌گری مسیر است.
+    </p>
+
+    <div>
+
+        <div class="service">
+
+            <div class="service-number">۱</div>
+
+            <div>
+                <h3>
+                    بررسی اولیه شرایط
+                </h3>
+
+                <p>
+                    اطلاعات اولیه‌ات را می‌گیریم و می‌گوییم آیا ادامه بررسی منطقی است یا نه.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="service">
+
+            <div class="service-number">۲</div>
+
+            <div>
+                <h3>
+                    راهنمایی برای مدارک پزشکی
+                </h3>
+
+                <p>
+                    درباره مدارک و مسیر مراجعه به مراجع پزشکی معتبر راهنمایی می‌کنیم.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="service">
+
+            <div class="service-number">۳</div>
+
+            <div>
+                <h3>
+                    تکمیل و آماده‌سازی پرونده
+                </h3>
+
+                <p>
+                    برای جمع‌آوری و مرتب‌سازی مدارک و جلوگیری از خطاهای قابل پیشگیری کمک می‌کنیم.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="service">
+
+            <div class="service-number">۴</div>
+
+            <div>
+                <h3>
+                    پیگیری مسیر پرونده
+                </h3>
+
+                <p>
+                    در حدود خدمات توافق‌شده، مسیر پیگیری را تا مشخص شدن نتیجه همراهی می‌کنیم.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+<section class="reveal">
+
+    <h2 class="section-title">
+        سؤالاتی که احتمالاً برای تو هم مهم است
+    </h2>
+
+    <div class="faq-list">
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>دقیقاً چقدر مستمری می‌گیرم؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                مبلغ مستمری عدد ثابتی برای همه افراد نیست و بر اساس قوانین،
+                نوع حمایت و شرایط احراز‌شده تعیین می‌شود. هیچ مبلغ مشخصی
+                را نمی‌توان قبل از بررسی و تأیید، تضمین کرد.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>شرایط دریافت چیست؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                داشتن استرس، اضطراب یا فشار روحی به‌تنهایی به معنی واجد شرایط
+                بودن نیست. شرایط هر فرد باید مطابق ضوابط مربوط، مدارک معتبر
+                و ارزیابی مراجع ذی‌صلاح بررسی شود.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>من شاغل هستم؛ می‌توانم درخواست بدهم؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                شاغل بودن به‌تنهایی پاسخ قطعی درباره استحقاق یا عدم استحقاق
+                نمی‌دهد. شرایط پرونده باید به‌صورت موردی و طبق ضوابط بررسی شود.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>چه مدارکی لازم است؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                مدارک مورد نیاز بسته به نوع پرونده متفاوت است. مدارک هویتی،
+                پزشکی و سایر مستندات لازم باید مطابق درخواست مرجع مربوط تهیه شود.
+                در این مسیر راهنمایی‌تان می‌کنیم.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>چقدر طول می‌کشد؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                زمان رسیدگی برای همه پرونده‌ها یکسان نیست و به نوع پرونده،
+                تکمیل مدارک و روند بررسی مراجع مربوط بستگی دارد؛ بنابراین
+                زمان قطعی از قبل قابل تضمین نیست.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>هزینه خدمات شما چقدر است؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                بررسی اولیه شرایط رایگان است. در صورت مناسب بودن ادامه مسیر،
+                هزینه خدمات و شرایط پرداخت قبل از شروع آن مرحله شفاف اعلام می‌شود.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>آیا این کار قانونی است؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                اقدام برای دریافت حمایت از مسیرهای رسمی و قانونی انجام می‌شود.
+                این مجموعه وابستگی رسمی به سازمان بهزیستی ندارد و تصمیم نهایی
+                درباره احراز شرایط و پرداخت حمایت با مراجع ذی‌صلاح است.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>خودم هم می‌توانم اقدام کنم؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                بله. شما می‌توانید شخصاً از مسیرهای رسمی اقدام کنید.
+                خدمات ما برای افرادی است که می‌خواهند قبل و حین پیگیری،
+                درباره مراحل و مدارک راهنمایی و تسهیل‌گری دریافت کنند.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                <span>اگر پرونده تأیید نشود چه می‌شود؟</span>
+                <span class="faq-icon">+</span>
+            </button>
+
+            <div class="faq-answer">
+                تأیید یا رد پرونده در اختیار مراجع ذی‌صلاح است. شرایط بازپرداخت
+                هرگونه هزینه خدمات، در صورت وجود، باید پیش از شروع همکاری به‌صورت
+                شفاف و مکتوب با شما توافق شود.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     داستان
+===================================================== -->
+<section class="story reveal">
+
+    <h2 class="section-title">
+        یک مثال واقعی از چیزی که ممکن است اتفاق بیفتد
+    </h2>
+
+    <div class="story-card">
+
+        <div class="story-text">
+
+            <strong>
+                «فکر می‌کردم اصلاً شامل من نمی‌شود.»
+            </strong>
+
+            <p>
+                آقای رضایی، ۳۸ ساله، برای بررسی شرایطش با ما تماس گرفت.
+                بعد از بررسی اولیه متوجه شد برای ادامه مسیر باید مدارک و
+                وضعیتش از طریق مراجع مربوط ارزیابی شود. همین تماس ساده،
+                تکلیف مسیرش را روشن کرد.
+            </p>
+
+        </div>
+
+    </div>
+
+    <p style="font-size:9px;color:#8EA2B1;margin:10px 0 0;">
+        این داستان نمونه آموزشی است و به معنی تضمین نتیجه برای افراد دیگر نیست.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     نظرات
+===================================================== -->
+<section class="testimonials reveal">
+
+    <h2 class="section-title">
+        تجربه مراجعه‌کنندگان
+    </h2>
+
+    <p class="section-subtitle">
+        نمونه متن نمایشی؛ نظرات واقعی باید با رضایت صاحبان آنها جایگزین شوند.
+    </p>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                «چیزی که برای من مهم بود این بود که قبل از پرداخت،
+                مراحل را واضح توضیح دادند و فهمیدم چه مدارکی لازم دارم.»
+            </p>
+
+            <div class="person">
+                — مریم، تهران
+            </div>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                «من اصلاً نمی‌دانستم از کجا باید شروع کنم. حداقل بعد از
+                مشاوره فهمیدم مسیر قانونی بررسی پرونده چطور است.»
+            </p>
+
+            <div class="person">
+                — رضا، کرج
+            </div>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                «قبل از هر کاری شرایط من را بررسی کردند و گفتند چه چیزهایی
+                باید آماده کنم. همین موضوع خیلی از سردرگمی‌ام کم کرد.»
+            </p>
+
+            <div class="person">
+                — سارا، اصفهان
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     هشدار
+===================================================== -->
+<section class="warnings reveal">
+
+    <h2 class="section-title">
+        ⚠️ این اشتباه‌ها را نکن
+    </h2>
+
+    <div class="warning">
+
+        <div class="warning-icon">🚫</div>
+
+        <div>
+            <strong>بدون اطلاع از مسیر اقدام نکن</strong>
+            <span>
+                قبل از ارسال مدارک، مراحل و مدارک مورد نیاز را از مرجع رسمی مربوط بررسی کن.
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="warning">
+
+        <div class="warning-icon">🩺</div>
+
+        <div>
+            <strong>از مدارک پزشکی نامعتبر استفاده نکن</strong>
+            <span>
+                اعتبار و پذیرش مدارک باید مطابق ضوابط مرجع مربوط باشد.
+            </span>
+        </div>
+
+    </div>
+
+
+    <div class="warning">
+
+        <div class="warning-icon">📄</div>
+
+        <div>
+            <strong>مدارک ناقص ارسال نکن</strong>
+            <span>
+                نقص مدارک می‌تواند باعث برگشت پرونده و طولانی شدن روند بررسی شود.
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     فرم
+===================================================== -->
+<section class="form-section reveal" id="leadForm">
+
+    <h2 class="section-title">
+        همین حالا شرایطت را رایگان بررسی کن
+    </h2>
+
+    <p class="section-subtitle">
+        اطلاعات اولیه را وارد کن تا درخواست بررسی در همین دستگاه ذخیره شود.
+    </p>
+
+    <form class="form-card" id="leadFormElement" novalidate>
+
+        <div class="form-field">
+
+            <label for="fullName">
+                نام و نام خانوادگی
+            </label>
+
+            <input
+                id="fullName"
+                type="text"
+                autocomplete="name"
+                placeholder="مثلاً علی رضایی"
+            >
+
+            <div class="error">
+                لطفاً نام و نام خانوادگی را وارد کنید.
+            </div>
+
+        </div>
+
+
+        <div class="form-field">
+
+            <label for="phone">
+                شماره تماس
+            </label>
+
+            <input
+                id="phone"
+                type="tel"
+                inputmode="numeric"
+                autocomplete="tel"
+                maxlength="11"
+                placeholder="۰۹۱۲۳۴۵۶۷۸۹"
+            >
+
+            <div class="error">
+                شماره باید با ۰۹ شروع شود و ۱۱ رقم داشته باشد.
+            </div>
+
+        </div>
+
+
+        <div class="form-field">
+
+            <label for="formAge">
+                سن
+            </label>
+
+            <input
+                id="formAge"
+                type="number"
+                min="18"
+                max="100"
+                inputmode="numeric"
+                placeholder="مثلاً ۳۸"
+            >
+
+            <div class="error">
+                لطفاً سن معتبر را وارد کنید.
+            </div>
+
+        </div>
+
+
+        <div class="form-field">
+
+            <label for="city">
+                شهر
+            </label>
+
+            <input
+                id="city"
+                type="text"
+                autocomplete="address-level2"
+                placeholder="مثلاً تهران"
+            >
+
+            <div class="error">
+                لطفاً شهر را وارد کنید.
+            </div>
+
+        </div>
+
+
+        <div class="form-field">
+
+            <label for="employment">
+                وضعیت اشتغال
+            </label>
+
+            <select id="employment">
+
+                <option value="">
+                    انتخاب کنید
+                </option>
+
+                <option value="شاغل">
+                    شاغل
+                </option>
+
+                <option value="بیکار">
+                    بیکار
+                </option>
+
+            </select>
+
+            <div class="error">
+                لطفاً وضعیت اشتغال را انتخاب کنید.
+            </div>
+
+        </div>
+
+
+        <button class="submit-btn" type="submit">
+            درخواست بررسی رایگان
+        </button>
+
+        <div class="form-success" id="formSuccess">
+            درخواست شما در این دستگاه ثبت شد.
+            برای پیگیری، می‌توانید مستقیماً از طریق واتساپ با ما در ارتباط باشید.
+        </div>
+
+        <p class="form-privacy">
+            اطلاعات واردشده فقط برای مدیریت درخواست شما در همین مرورگر استفاده می‌شود.
+        </p>
+
+    </form>
+
+</section>
+
+
+<!-- =====================================================
+     CTA نهایی
+===================================================== -->
+<section class="final-cta reveal">
+
+    <h2 class="section-title">
+        هنوز مطمئن نیستی؟
+    </h2>
+
+    <p>
+        لازم نیست حدس بزنی. اول شرایطت را بررسی کن،
+        بعد درباره ادامه مسیر تصمیم بگیر.
+    </p>
+
+    <a class="cta-main" href="#leadForm">
+        بررسی رایگان شرایط من
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     فوتر
+===================================================== -->
+<footer>
+
+    <p>
+        این وب‌سایت خدمات مشاوره‌ای و تسهیل‌گری ارائه می‌دهد
+        و هیچ وابستگی رسمی به سازمان بهزیستی ندارد.
+    </p>
+
+    <p>
+        نتیجه هر پرونده منوط به احراز شرایط قانونی و تصمیم
+        مراجع ذی‌صلاح است.
+    </p>
+
+    <p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">
+            اینستاگرام
+        </a>
+    </p>
+
+    <p>
+        © تمامی حقوق این صفحه محفوظ است.
+    </p>
+
+</footer>
+
+</div>
+
+
+<!-- =====================================================
+     دکمه شناور واتساپ
+===================================================== -->
+<a
+    class="floating-whatsapp"
+    href="https://wa.me/989303833007?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%B4%D8%B1%D8%A7%DB%8C%D8%B7%D9%85%20%D8%B1%D8%A7%20%D8%AF%D8%B1%20%D8%B3%D8%A7%DB%8C%D8%AA%20%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C%20%DA%A9%D8%B1%D8%AF%D9%85%20%D9%88%20%D8%A2%D9%85%D8%A7%D8%AF%D9%87%20%D8%A7%D9%82%D8%AF%D8%A7%D9%85%20%D9%87%D8%B3%D8%AA%D9%85.%20%D9%84%D8%B7%D9%81%D8%A7%D9%8B%20%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C%DB%8C%E2%80%8C%D8%A7%D9%85%20%DA%A9%D9%86%DB%8C%D8%AF."
+    aria-label="واتساپ"
+>
+
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+            d="M20.5 3.5A11.9 11.9 0 0 0 12.03 0C5.46 0 .12 5.34.12 11.91c0 2.1.55 4.15 1.59 5.96L0 24l6.27-1.65a11.9 11.9 0 0 0 5.76 1.47h.01c6.56 0 11.9-5.34 11.9-11.91 0-3.18-1.24-6.16-3.44-8.41Z"
+            fill="currentColor"
+        />
+        <path
+            d="M17.48 13.95c-.3-.15-1.78-.88-2.05-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.94 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.03 1.01-1.03 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.18 5.04 4.46.7.3 1.25.49 1.67.63.7.22 1.33.19 1.83.12.56-.08 1.78-.73 2.03-1.44.25-.71.25-1.32.17-1.44-.07-.12-.27-.2-.57-.35Z"
+            fill="#20B85A"
+        />
+    </svg>
+
+</a>
+
+
+<script>
+/* =========================================================
+   تبدیل اعداد انگلیسی به فارسی
+========================================================= */
+function toPersianNumber(value){
+    return String(value)
+        .replace(/\d/g, function(d){
+            return "۰۱۲۳۴۵۶۷۸۹"[d];
+        })
+        .replace(/\./g,"٫");
+}
+
+
+/* =========================================================
+   شمارنده تا پایان امروز
+========================================================= */
+function updateCountdown(){
+
+    const now = new Date();
+
+    const end = new Date();
+    end.setHours(24,0,0,0);
+
+    let diff = end - now;
+
+    if(diff < 0){
+        diff = 0;
+    }
+
+    const totalSeconds = Math.floor(diff / 1000);
+
+    const hours =
+        Math.floor(totalSeconds / 3600);
+
+    const minutes =
+        Math.floor((totalSeconds % 3600) / 60);
+
+    const seconds =
+        totalSeconds % 60;
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2,"0");
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+
+/* =========================================================
+   ماشین حساب
+========================================================= */
+const ageInput =
+    document.getElementById("age");
+
+const retirementInput =
+    document.getElementById("retirementAge");
+
+const calcResult =
+    document.getElementById("calcResult");
+
+function calculateIncome(){
+
+    let age =
+        parseInt(ageInput.value,10);
+
+    let retirement =
+        parseInt(retirementInput.value,10);
+
+    if(
+        Number.isNaN(age) ||
+        Number.isNaN(retirement) ||
+        age < 1 ||
+        retirement <= age
+    ){
+        calcResult.textContent = "سن را صحیح وارد کنید";
+        return;
+    }
+
+    const months =
+        (retirement - age) * 12;
+
+    const amount =
+        months * 30000000;
+
+    let billion =
+        amount / 1000000000;
+
+    let formatted =
+        billion.toLocaleString("fa-IR",{
+            maximumFractionDigits:2
+        });
+
+    calcResult.textContent =
+        formatted + " میلیارد تومان";
+}
+
+ageInput.addEventListener("input",calculateIncome);
+retirementInput.addEventListener("input",calculateIncome);
+
+calculateIncome();
+
+
+/* =========================================================
+   FAQ آکاردئون
+========================================================= */
+document.querySelectorAll(".faq-question")
+.forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+        const current =
+            this.parentElement;
+
+        document.querySelectorAll(".faq-item")
+        .forEach(function(item){
+
+            if(item !== current){
+                item.classList.remove("active");
+            }
+
+        });
+
+        current.classList.toggle("active");
+
+    });
+
+});
+
+
+/* =========================================================
+   انیمیشن هنگام اسکرول
+========================================================= */
+const observer =
+    new IntersectionObserver(
+        function(entries){
+
+            entries.forEach(function(entry){
+
+                if(entry.isIntersecting){
+
+                    entry.target.classList.add("visible");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold:.12
+        }
+    );
+
+document.querySelectorAll(".reveal")
+.forEach(function(element){
+
+    observer.observe(element);
+
+});
+
+
+/* =========================================================
+   اعتبارسنجی فرم
+========================================================= */
+const form =
+    document.getElementById("leadFormElement");
+
+const formSuccess =
+    document.getElementById("formSuccess");
+
+function setInvalid(element, invalid){
+
+    const field =
+        element.closest(".form-field");
+
+    if(!field) return;
+
+    if(invalid){
+        field.classList.add("invalid");
+    }else{
+        field.classList.remove("invalid");
+    }
+}
+
+
+function normalizeDigits(value){
+
+    return value
+        .replace(/[۰-۹]/g,function(d){
+            return String("۰۱۲۳۴۵۶۷۸۹".indexOf(d));
+        })
+        .replace(/\s+/g,"");
+}
+
+
+form.addEventListener("submit",function(event){
+
+    event.preventDefault();
+
+    const fullName =
+        document.getElementById("fullName");
+
+    const phone =
+        document.getElementById("phone");
+
+    const formAge =
+        document.getElementById("formAge");
+
+    const city =
+        document.getElementById("city");
+
+    const employment =
+        document.getElementById("employment");
+
+    const normalizedPhone =
+        normalizeDigits(phone.value);
+
+    const validName =
+        fullName.value.trim().length >= 3;
+
+    const validPhone =
+        /^09\d{9}$/.test(normalizedPhone);
+
+    const age =
+        parseInt(
+            normalizeDigits(formAge.value),
+            10
+        );
+
+    const validAge =
+        !Number.isNaN(age) &&
+        age >= 18 &&
+        age <= 100;
+
+    const validCity =
+        city.value.trim().length >= 2;
+
+    const validEmployment =
+        employment.value !== "";
+
+    setInvalid(fullName,!validName);
+    setInvalid(phone,!validPhone);
+    setInvalid(formAge,!validAge);
+    setInvalid(city,!validCity);
+    setInvalid(employment,!validEmployment);
+
+    if(
+        !validName ||
+        !validPhone ||
+        !validAge ||
+        !validCity ||
+        !validEmployment
+    ){
+        return;
+    }
+
+    const data = {
+
+        name:
+            fullName.value.trim(),
+
+        phone:
+            normalizedPhone,
+
+        age:
+            age,
+
+        city:
+            city.value.trim(),
+
+        employment:
+            employment.value,
+
+        createdAt:
+            new Date().toISOString()
+
+    };
+
+    localStorage.setItem(
+        "roshaSupportLead",
+        JSON.stringify(data)
+    );
+
+    formSuccess.style.display =
+        "block";
+
+    formSuccess.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+
+});
+
+
+/* =========================================================
+   بازیابی وضعیت فرم
+========================================================= */
+try{
+
+    const saved =
+        localStorage.getItem("roshaSupportLead");
+
+    if(saved){
+
+        formSuccess.style.display =
+            "block";
+
+    }
+
+}catch(error){
+
+    console.log(error);
+
+}
+</script>
+
+</body>
+</html>
+```0
